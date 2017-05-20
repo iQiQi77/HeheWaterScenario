@@ -71,17 +71,17 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelX17 = new DevComponents.DotNetBar.LabelX();
-            this.label11 = new System.Windows.Forms.Label();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.lbYearClimate = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.lbRain = new DevComponents.DotNetBar.LabelX();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.lbTemperature = new DevComponents.DotNetBar.LabelX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.lbRain = new System.Windows.Forms.Label();
+            this.lbTemperature = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.zedGraphControl3 = new ZedGraph.ZedGraphControl();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lbYearClimate = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -93,15 +93,15 @@
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.pbEcology = new System.Windows.Forms.PictureBox();
-            this.labelX18 = new DevComponents.DotNetBar.LabelX();
-            this.lbYearEcology = new DevComponents.DotNetBar.LabelX();
-            this.lbUsingWater = new DevComponents.DotNetBar.LabelX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.lbUsingWater = new System.Windows.Forms.Label();
+            this.labelX7 = new System.Windows.Forms.Label();
+            this.lbYearEcology = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.zedGraphControl6 = new ZedGraph.ZedGraphControl();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.zedGraphControl5 = new ZedGraph.ZedGraphControl();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.zedGraphControl4 = new ZedGraph.ZedGraphControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -113,11 +113,11 @@
             this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.pbCity = new System.Windows.Forms.PictureBox();
-            this.labelX19 = new DevComponents.DotNetBar.LabelX();
-            this.lbYearCity = new DevComponents.DotNetBar.LabelX();
-            this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.labelX10 = new DevComponents.DotNetBar.LabelX();
-            this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lbYearCity = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.zedGraphControl10 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl9 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl7 = new ZedGraph.ZedGraphControl();
@@ -131,21 +131,22 @@
             this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.pbRoad = new System.Windows.Forms.PictureBox();
-            this.labelX20 = new DevComponents.DotNetBar.LabelX();
-            this.lbYearRoad = new DevComponents.DotNetBar.LabelX();
-            this.labelX16 = new DevComponents.DotNetBar.LabelX();
-            this.lbLabour = new DevComponents.DotNetBar.LabelX();
-            this.lbGovernment = new DevComponents.DotNetBar.LabelX();
-            this.labelX15 = new DevComponents.DotNetBar.LabelX();
-            this.labelX14 = new DevComponents.DotNetBar.LabelX();
-            this.labelX13 = new DevComponents.DotNetBar.LabelX();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.lbLabour = new System.Windows.Forms.Label();
+            this.lbGovernment = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lbYearRoad = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.zedGraphControl12 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl8 = new ZedGraph.ZedGraphControl();
-            this.labelX12 = new DevComponents.DotNetBar.LabelX();
             this.zedGraphControl11 = new ZedGraph.ZedGraphControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.tmYear = new System.Windows.Forms.Timer(this.components);
+            this.allTimer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -586,17 +587,17 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.splitContainer2.Panel2.Controls.Add(this.labelX17);
-            this.splitContainer2.Panel2.Controls.Add(this.label11);
-            this.splitContainer2.Panel2.Controls.Add(this.labelX2);
-            this.splitContainer2.Panel2.Controls.Add(this.lbYearClimate);
-            this.splitContainer2.Panel2.Controls.Add(this.labelX3);
             this.splitContainer2.Panel2.Controls.Add(this.lbRain);
-            this.splitContainer2.Panel2.Controls.Add(this.labelX5);
             this.splitContainer2.Panel2.Controls.Add(this.lbTemperature);
-            this.splitContainer2.Panel2.Controls.Add(this.labelX1);
-            this.splitContainer2.Panel2.Controls.Add(this.zedGraphControl1);
+            this.splitContainer2.Panel2.Controls.Add(this.label19);
+            this.splitContainer2.Panel2.Controls.Add(this.label18);
+            this.splitContainer2.Panel2.Controls.Add(this.label17);
+            this.splitContainer2.Panel2.Controls.Add(this.label16);
             this.splitContainer2.Panel2.Controls.Add(this.zedGraphControl3);
+            this.splitContainer2.Panel2.Controls.Add(this.label12);
+            this.splitContainer2.Panel2.Controls.Add(this.lbYearClimate);
+            this.splitContainer2.Panel2.Controls.Add(this.label11);
+            this.splitContainer2.Panel2.Controls.Add(this.zedGraphControl1);
             this.splitContainer2.Panel2.Controls.Add(this.zedGraphControl2);
             this.splitContainer2.Size = new System.Drawing.Size(994, 461);
             this.splitContainer2.SplitterDistance = 226;
@@ -703,157 +704,75 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // labelX17
-            // 
-            // 
-            // 
-            // 
-            this.labelX17.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX17.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX17.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelX17.Location = new System.Drawing.Point(707, 12);
-            this.labelX17.Name = "labelX17";
-            this.labelX17.Size = new System.Drawing.Size(25, 23);
-            this.labelX17.TabIndex = 14;
-            this.labelX17.Text = "年";
-            this.labelX17.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(593, 15);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 19);
-            this.label11.TabIndex = 12;
-            // 
-            // labelX2
-            // 
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelX2.Location = new System.Drawing.Point(547, 43);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(105, 23);
-            this.labelX2.TabIndex = 11;
-            this.labelX2.Text = "降水数据";
-            // 
-            // lbYearClimate
-            // 
-            this.lbYearClimate.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lbYearClimate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbYearClimate.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbYearClimate.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbYearClimate.Location = new System.Drawing.Point(645, 8);
-            this.lbYearClimate.Name = "lbYearClimate";
-            this.lbYearClimate.SingleLineColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbYearClimate.Size = new System.Drawing.Size(70, 30);
-            this.lbYearClimate.TabIndex = 1;
-            this.lbYearClimate.Text = "2000";
-            this.lbYearClimate.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // labelX3
-            // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelX3.Location = new System.Drawing.Point(496, 346);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(75, 33);
-            this.labelX3.TabIndex = 7;
-            this.labelX3.Text = "气温：";
-            this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
             // lbRain
             // 
-            // 
-            // 
-            // 
-            this.lbRain.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lbRain.AutoSize = true;
             this.lbRain.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbRain.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lbRain.Location = new System.Drawing.Point(577, 405);
+            this.lbRain.Location = new System.Drawing.Point(594, 411);
             this.lbRain.Name = "lbRain";
-            this.lbRain.Size = new System.Drawing.Size(75, 23);
-            this.lbRain.TabIndex = 10;
-            this.lbRain.Text = "lbRain";
-            this.lbRain.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // labelX5
-            // 
-            this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelX5.Location = new System.Drawing.Point(496, 397);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(75, 33);
-            this.labelX5.TabIndex = 9;
-            this.labelX5.Text = "降水：";
-            this.labelX5.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.lbRain.Size = new System.Drawing.Size(56, 16);
+            this.lbRain.TabIndex = 22;
+            this.lbRain.Text = "降水：";
             // 
             // lbTemperature
             // 
-            // 
-            // 
-            // 
-            this.lbTemperature.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lbTemperature.AutoSize = true;
             this.lbTemperature.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbTemperature.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lbTemperature.Location = new System.Drawing.Point(577, 346);
+            this.lbTemperature.Location = new System.Drawing.Point(218, 411);
             this.lbTemperature.Name = "lbTemperature";
-            this.lbTemperature.Size = new System.Drawing.Size(75, 23);
-            this.lbTemperature.TabIndex = 8;
-            this.lbTemperature.Text = "labelX4";
-            this.lbTemperature.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.lbTemperature.Size = new System.Drawing.Size(56, 16);
+            this.lbTemperature.TabIndex = 21;
+            this.lbTemperature.Text = "气温：";
             // 
-            // labelX1
+            // label19
             // 
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label19.Location = new System.Drawing.Point(517, 411);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(72, 19);
+            this.label19.TabIndex = 20;
+            this.label19.Text = "降水：";
             // 
+            // label18
             // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label18.Location = new System.Drawing.Point(141, 411);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(72, 19);
+            this.label18.TabIndex = 19;
+            this.label18.Text = "气温：";
             // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelX1.Location = new System.Drawing.Point(171, 3);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(105, 23);
-            this.labelX1.TabIndex = 4;
-            this.labelX1.Text = "气温数据";
+            // label17
             // 
-            // zedGraphControl1
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label17.Location = new System.Drawing.Point(548, 34);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(86, 22);
+            this.label17.TabIndex = 18;
+            this.label17.Text = "降水数据";
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(21, 32);
-            this.zedGraphControl1.Name = "zedGraphControl1";
-            this.zedGraphControl1.ScrollGrace = 0D;
-            this.zedGraphControl1.ScrollMaxX = 0D;
-            this.zedGraphControl1.ScrollMaxY = 0D;
-            this.zedGraphControl1.ScrollMaxY2 = 0D;
-            this.zedGraphControl1.ScrollMinX = 0D;
-            this.zedGraphControl1.ScrollMinY = 0D;
-            this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(366, 253);
-            this.zedGraphControl1.TabIndex = 6;
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label16.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label16.Location = new System.Drawing.Point(160, 34);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(86, 22);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "温度数据";
             // 
             // zedGraphControl3
             // 
-            this.zedGraphControl3.Location = new System.Drawing.Point(3, 291);
+            this.zedGraphControl3.Location = new System.Drawing.Point(-237, 291);
             this.zedGraphControl3.Name = "zedGraphControl3";
             this.zedGraphControl3.ScrollGrace = 0D;
             this.zedGraphControl3.ScrollMaxX = 0D;
@@ -864,10 +783,54 @@
             this.zedGraphControl3.ScrollMinY2 = 0D;
             this.zedGraphControl3.Size = new System.Drawing.Size(400, 164);
             this.zedGraphControl3.TabIndex = 2;
+            this.zedGraphControl3.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.Location = new System.Drawing.Point(710, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 19);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "年";
+            // 
+            // lbYearClimate
+            // 
+            this.lbYearClimate.AutoSize = true;
+            this.lbYearClimate.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbYearClimate.Location = new System.Drawing.Point(660, 12);
+            this.lbYearClimate.Name = "lbYearClimate";
+            this.lbYearClimate.Size = new System.Drawing.Size(49, 19);
+            this.lbYearClimate.TabIndex = 15;
+            this.lbYearClimate.Text = "2005";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(593, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 19);
+            this.label11.TabIndex = 12;
+            // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.Location = new System.Drawing.Point(14, 75);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 0D;
+            this.zedGraphControl1.ScrollMaxY = 0D;
+            this.zedGraphControl1.ScrollMaxY2 = 0D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(366, 307);
+            this.zedGraphControl1.TabIndex = 6;
             // 
             // zedGraphControl2
             // 
-            this.zedGraphControl2.Location = new System.Drawing.Point(409, 72);
+            this.zedGraphControl2.Location = new System.Drawing.Point(406, 75);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
             this.zedGraphControl2.ScrollMaxX = 0D;
@@ -876,7 +839,7 @@
             this.zedGraphControl2.ScrollMinX = 0D;
             this.zedGraphControl2.ScrollMinY = 0D;
             this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(333, 245);
+            this.zedGraphControl2.Size = new System.Drawing.Size(353, 307);
             this.zedGraphControl2.TabIndex = 1;
             // 
             // tabPage4
@@ -904,15 +867,15 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.BackColor = System.Drawing.Color.Honeydew;
-            this.splitContainer3.Panel2.Controls.Add(this.labelX18);
-            this.splitContainer3.Panel2.Controls.Add(this.lbYearEcology);
+            this.splitContainer3.Panel2.Controls.Add(this.label24);
+            this.splitContainer3.Panel2.Controls.Add(this.label23);
+            this.splitContainer3.Panel2.Controls.Add(this.label22);
             this.splitContainer3.Panel2.Controls.Add(this.lbUsingWater);
-            this.splitContainer3.Panel2.Controls.Add(this.labelX8);
             this.splitContainer3.Panel2.Controls.Add(this.labelX7);
+            this.splitContainer3.Panel2.Controls.Add(this.lbYearEcology);
+            this.splitContainer3.Panel2.Controls.Add(this.label13);
             this.splitContainer3.Panel2.Controls.Add(this.zedGraphControl6);
-            this.splitContainer3.Panel2.Controls.Add(this.labelX6);
             this.splitContainer3.Panel2.Controls.Add(this.zedGraphControl5);
-            this.splitContainer3.Panel2.Controls.Add(this.labelX4);
             this.splitContainer3.Panel2.Controls.Add(this.zedGraphControl4);
             this.splitContainer3.Panel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.splitContainer3.Size = new System.Drawing.Size(994, 461);
@@ -1020,81 +983,80 @@
             this.pbEcology.TabIndex = 0;
             this.pbEcology.TabStop = false;
             // 
-            // labelX18
+            // label24
             // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label24.ForeColor = System.Drawing.Color.Green;
+            this.label24.Location = new System.Drawing.Point(531, 49);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(200, 22);
+            this.label24.TabIndex = 23;
+            this.label24.Text = "农业灌溉用水利用效率";
             // 
+            // label23
             // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label23.ForeColor = System.Drawing.Color.Green;
+            this.label23.Location = new System.Drawing.Point(187, 264);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(124, 22);
+            this.label23.TabIndex = 22;
+            this.label23.Text = "全国用水总量";
             // 
-            this.labelX18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX18.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX18.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelX18.Location = new System.Drawing.Point(707, 12);
-            this.labelX18.Name = "labelX18";
-            this.labelX18.Size = new System.Drawing.Size(25, 23);
-            this.labelX18.TabIndex = 15;
-            this.labelX18.Text = "年";
-            this.labelX18.TextAlignment = System.Drawing.StringAlignment.Center;
+            // label22
             // 
-            // lbYearEcology
-            // 
-            this.lbYearEcology.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lbYearEcology.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbYearEcology.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbYearEcology.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lbYearEcology.Location = new System.Drawing.Point(645, 8);
-            this.lbYearEcology.Name = "lbYearEcology";
-            this.lbYearEcology.SingleLineColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbYearEcology.Size = new System.Drawing.Size(70, 30);
-            this.lbYearEcology.TabIndex = 12;
-            this.lbYearEcology.Text = "2000";
-            this.lbYearEcology.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.ForeColor = System.Drawing.Color.Green;
+            this.label22.Location = new System.Drawing.Point(187, 7);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(124, 22);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "中国能源供需";
             // 
             // lbUsingWater
             // 
-            // 
-            // 
-            // 
-            this.lbUsingWater.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbUsingWater.Font = new System.Drawing.Font("Adobe Caslon Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsingWater.AutoSize = true;
+            this.lbUsingWater.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbUsingWater.ForeColor = System.Drawing.Color.Green;
-            this.lbUsingWater.Location = new System.Drawing.Point(623, 416);
+            this.lbUsingWater.Location = new System.Drawing.Point(625, 418);
             this.lbUsingWater.Name = "lbUsingWater";
-            this.lbUsingWater.Size = new System.Drawing.Size(119, 23);
-            this.lbUsingWater.TabIndex = 10;
-            this.lbUsingWater.Text = "labelX8";
-            // 
-            // labelX8
-            // 
-            this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX8.ForeColor = System.Drawing.Color.Green;
-            this.labelX8.Location = new System.Drawing.Point(191, 256);
-            this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(144, 23);
-            this.labelX8.TabIndex = 11;
-            this.labelX8.Text = "全国用水总量";
+            this.lbUsingWater.Size = new System.Drawing.Size(72, 16);
+            this.lbUsingWater.TabIndex = 20;
+            this.lbUsingWater.Text = "用水量：";
             // 
             // labelX7
             // 
-            // 
-            // 
-            // 
-            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX7.AutoSize = true;
             this.labelX7.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX7.ForeColor = System.Drawing.Color.Green;
-            this.labelX7.Location = new System.Drawing.Point(538, 416);
+            this.labelX7.Location = new System.Drawing.Point(545, 416);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(97, 23);
-            this.labelX7.TabIndex = 9;
+            this.labelX7.Size = new System.Drawing.Size(93, 19);
+            this.labelX7.TabIndex = 19;
             this.labelX7.Text = "用水量：";
-            this.labelX7.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // lbYearEcology
+            // 
+            this.lbYearEcology.AutoSize = true;
+            this.lbYearEcology.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbYearEcology.Location = new System.Drawing.Point(660, 12);
+            this.lbYearEcology.Name = "lbYearEcology";
+            this.lbYearEcology.Size = new System.Drawing.Size(49, 19);
+            this.lbYearEcology.TabIndex = 18;
+            this.lbYearEcology.Text = "2005";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label13.Location = new System.Drawing.Point(710, 12);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 19);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "年";
             // 
             // zedGraphControl6
             // 
@@ -1111,24 +1073,9 @@
             this.zedGraphControl6.Size = new System.Drawing.Size(457, 173);
             this.zedGraphControl6.TabIndex = 8;
             // 
-            // labelX6
-            // 
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX6.ForeColor = System.Drawing.Color.Green;
-            this.labelX6.Location = new System.Drawing.Point(535, 44);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(204, 23);
-            this.labelX6.TabIndex = 7;
-            this.labelX6.Text = "农业灌溉用水利用效率";
-            // 
             // zedGraphControl5
             // 
-            this.zedGraphControl5.Location = new System.Drawing.Point(513, 74);
+            this.zedGraphControl5.Location = new System.Drawing.Point(513, 75);
             this.zedGraphControl5.Margin = new System.Windows.Forms.Padding(4);
             this.zedGraphControl5.Name = "zedGraphControl5";
             this.zedGraphControl5.ScrollGrace = 0D;
@@ -1141,21 +1088,6 @@
             this.zedGraphControl5.Size = new System.Drawing.Size(204, 313);
             this.zedGraphControl5.TabIndex = 6;
             // 
-            // labelX4
-            // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX4.ForeColor = System.Drawing.Color.Green;
-            this.labelX4.Location = new System.Drawing.Point(191, 3);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(144, 23);
-            this.labelX4.TabIndex = 5;
-            this.labelX4.Text = "中国能源供需";
-            // 
             // zedGraphControl4
             // 
             this.zedGraphControl4.Location = new System.Drawing.Point(16, 32);
@@ -1167,7 +1099,7 @@
             this.zedGraphControl4.ScrollMinX = 0D;
             this.zedGraphControl4.ScrollMinY = 0D;
             this.zedGraphControl4.ScrollMinY2 = 0D;
-            this.zedGraphControl4.Size = new System.Drawing.Size(464, 230);
+            this.zedGraphControl4.Size = new System.Drawing.Size(464, 229);
             this.zedGraphControl4.TabIndex = 0;
             // 
             // tabPage5
@@ -1195,11 +1127,11 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.BackColor = System.Drawing.Color.LemonChiffon;
-            this.splitContainer4.Panel2.Controls.Add(this.labelX19);
+            this.splitContainer4.Panel2.Controls.Add(this.label27);
+            this.splitContainer4.Panel2.Controls.Add(this.label26);
+            this.splitContainer4.Panel2.Controls.Add(this.label25);
             this.splitContainer4.Panel2.Controls.Add(this.lbYearCity);
-            this.splitContainer4.Panel2.Controls.Add(this.labelX11);
-            this.splitContainer4.Panel2.Controls.Add(this.labelX10);
-            this.splitContainer4.Panel2.Controls.Add(this.labelX9);
+            this.splitContainer4.Panel2.Controls.Add(this.label14);
             this.splitContainer4.Panel2.Controls.Add(this.zedGraphControl10);
             this.splitContainer4.Panel2.Controls.Add(this.zedGraphControl9);
             this.splitContainer4.Panel2.Controls.Add(this.zedGraphControl7);
@@ -1308,82 +1240,58 @@
             this.pbCity.TabIndex = 0;
             this.pbCity.TabStop = false;
             // 
-            // labelX19
+            // label27
             // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label27.ForeColor = System.Drawing.Color.Crimson;
+            this.label27.Location = new System.Drawing.Point(554, 38);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(105, 22);
+            this.label27.TabIndex = 24;
+            this.label27.Text = "农民工总量";
             // 
+            // label26
             // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.ForeColor = System.Drawing.Color.Crimson;
+            this.label26.Location = new System.Drawing.Point(198, 261);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(67, 22);
+            this.label26.TabIndex = 23;
+            this.label26.Text = "就业率";
             // 
-            this.labelX19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX19.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX19.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelX19.Location = new System.Drawing.Point(707, 12);
-            this.labelX19.Name = "labelX19";
-            this.labelX19.Size = new System.Drawing.Size(25, 23);
-            this.labelX19.TabIndex = 15;
-            this.labelX19.Text = "年";
-            this.labelX19.TextAlignment = System.Drawing.StringAlignment.Center;
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label25.ForeColor = System.Drawing.Color.Crimson;
+            this.label25.Location = new System.Drawing.Point(198, 3);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(86, 22);
+            this.label25.TabIndex = 22;
+            this.label25.Text = "城镇化率";
             // 
             // lbYearCity
             // 
-            this.lbYearCity.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lbYearCity.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbYearCity.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbYearCity.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lbYearCity.Location = new System.Drawing.Point(645, 8);
+            this.lbYearCity.AutoSize = true;
+            this.lbYearCity.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbYearCity.Location = new System.Drawing.Point(660, 12);
             this.lbYearCity.Name = "lbYearCity";
-            this.lbYearCity.SingleLineColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbYearCity.Size = new System.Drawing.Size(70, 30);
-            this.lbYearCity.TabIndex = 13;
-            this.lbYearCity.Text = "2000";
-            this.lbYearCity.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.lbYearCity.Size = new System.Drawing.Size(49, 19);
+            this.lbYearCity.TabIndex = 18;
+            this.lbYearCity.Text = "2005";
             // 
-            // labelX11
+            // label14
             // 
-            this.labelX11.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX11.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX11.Location = new System.Drawing.Point(198, 3);
-            this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(93, 23);
-            this.labelX11.TabIndex = 8;
-            this.labelX11.Text = "城镇化率";
-            // 
-            // labelX10
-            // 
-            this.labelX10.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX10.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX10.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX10.Location = new System.Drawing.Point(554, 38);
-            this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(110, 23);
-            this.labelX10.TabIndex = 7;
-            this.labelX10.Text = "农民工总量";
-            // 
-            // labelX9
-            // 
-            this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX9.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX9.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX9.Location = new System.Drawing.Point(198, 257);
-            this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(66, 23);
-            this.labelX9.TabIndex = 6;
-            this.labelX9.Text = "就业率";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label14.Location = new System.Drawing.Point(710, 12);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 19);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "年";
             // 
             // zedGraphControl10
             // 
@@ -1452,17 +1360,17 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.splitContainer5.Panel2.Controls.Add(this.labelX20);
-            this.splitContainer5.Panel2.Controls.Add(this.lbYearRoad);
-            this.splitContainer5.Panel2.Controls.Add(this.labelX16);
+            this.splitContainer5.Panel2.Controls.Add(this.label30);
+            this.splitContainer5.Panel2.Controls.Add(this.label29);
+            this.splitContainer5.Panel2.Controls.Add(this.label28);
             this.splitContainer5.Panel2.Controls.Add(this.lbLabour);
             this.splitContainer5.Panel2.Controls.Add(this.lbGovernment);
-            this.splitContainer5.Panel2.Controls.Add(this.labelX15);
-            this.splitContainer5.Panel2.Controls.Add(this.labelX14);
-            this.splitContainer5.Panel2.Controls.Add(this.labelX13);
+            this.splitContainer5.Panel2.Controls.Add(this.label21);
+            this.splitContainer5.Panel2.Controls.Add(this.label20);
+            this.splitContainer5.Panel2.Controls.Add(this.lbYearRoad);
+            this.splitContainer5.Panel2.Controls.Add(this.label15);
             this.splitContainer5.Panel2.Controls.Add(this.zedGraphControl12);
             this.splitContainer5.Panel2.Controls.Add(this.zedGraphControl8);
-            this.splitContainer5.Panel2.Controls.Add(this.labelX12);
             this.splitContainer5.Panel2.Controls.Add(this.zedGraphControl11);
             this.splitContainer5.Size = new System.Drawing.Size(994, 461);
             this.splitContainer5.SplitterDistance = 226;
@@ -1572,123 +1480,102 @@
             this.pbRoad.TabIndex = 0;
             this.pbRoad.TabStop = false;
             // 
-            // labelX20
+            // label30
             // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label30.ForeColor = System.Drawing.Color.Crimson;
+            this.label30.Location = new System.Drawing.Point(534, 52);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(86, 22);
+            this.label30.TabIndex = 27;
+            this.label30.Text = "政府投资";
             // 
+            // label29
             // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label29.ForeColor = System.Drawing.Color.Crimson;
+            this.label29.Location = new System.Drawing.Point(166, 254);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(48, 22);
+            this.label29.TabIndex = 26;
+            this.label29.Text = "贸易";
             // 
-            this.labelX20.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX20.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX20.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelX20.Location = new System.Drawing.Point(707, 12);
-            this.labelX20.Name = "labelX20";
-            this.labelX20.Size = new System.Drawing.Size(25, 23);
-            this.labelX20.TabIndex = 19;
-            this.labelX20.Text = "年";
-            this.labelX20.TextAlignment = System.Drawing.StringAlignment.Center;
+            // label28
             // 
-            // lbYearRoad
-            // 
-            this.lbYearRoad.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lbYearRoad.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbYearRoad.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbYearRoad.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lbYearRoad.Location = new System.Drawing.Point(645, 8);
-            this.lbYearRoad.Name = "lbYearRoad";
-            this.lbYearRoad.SingleLineColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbYearRoad.Size = new System.Drawing.Size(70, 30);
-            this.lbYearRoad.TabIndex = 18;
-            this.lbYearRoad.Text = "2000";
-            this.lbYearRoad.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // labelX16
-            // 
-            // 
-            // 
-            // 
-            this.labelX16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX16.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX16.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX16.Location = new System.Drawing.Point(448, 409);
-            this.labelX16.Name = "labelX16";
-            this.labelX16.Size = new System.Drawing.Size(146, 23);
-            this.labelX16.TabIndex = 17;
-            this.labelX16.Text = "劳动力数量：";
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label28.ForeColor = System.Drawing.Color.Crimson;
+            this.label28.Location = new System.Drawing.Point(142, 3);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(105, 22);
+            this.label28.TabIndex = 25;
+            this.label28.Text = "劳动力数量";
             // 
             // lbLabour
             // 
-            // 
-            // 
-            // 
-            this.lbLabour.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbLabour.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbLabour.AutoSize = true;
+            this.lbLabour.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbLabour.ForeColor = System.Drawing.Color.Crimson;
-            this.lbLabour.Location = new System.Drawing.Point(600, 409);
+            this.lbLabour.Location = new System.Drawing.Point(582, 412);
             this.lbLabour.Name = "lbLabour";
-            this.lbLabour.Size = new System.Drawing.Size(108, 23);
-            this.lbLabour.TabIndex = 16;
-            this.lbLabour.Text = "labelX18";
+            this.lbLabour.Size = new System.Drawing.Size(88, 16);
+            this.lbLabour.TabIndex = 24;
+            this.lbLabour.Text = "政府投资：";
             // 
             // lbGovernment
             // 
-            // 
-            // 
-            // 
-            this.lbGovernment.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lbGovernment.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbGovernment.AutoSize = true;
+            this.lbGovernment.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbGovernment.ForeColor = System.Drawing.Color.Crimson;
-            this.lbGovernment.Location = new System.Drawing.Point(600, 371);
+            this.lbGovernment.Location = new System.Drawing.Point(582, 375);
             this.lbGovernment.Name = "lbGovernment";
-            this.lbGovernment.Size = new System.Drawing.Size(117, 23);
-            this.lbGovernment.TabIndex = 14;
-            this.lbGovernment.Text = "lb";
+            this.lbGovernment.Size = new System.Drawing.Size(88, 16);
+            this.lbGovernment.TabIndex = 23;
+            this.lbGovernment.Text = "政府投资：";
             // 
-            // labelX15
+            // label21
             // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label21.ForeColor = System.Drawing.Color.Crimson;
+            this.label21.Location = new System.Drawing.Point(448, 411);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(135, 19);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "劳动力数量：";
             // 
+            // label20
             // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.ForeColor = System.Drawing.Color.Crimson;
+            this.label20.Location = new System.Drawing.Point(448, 372);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(114, 19);
+            this.label20.TabIndex = 21;
+            this.label20.Text = "政府投资：";
             // 
-            this.labelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX15.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX15.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX15.Location = new System.Drawing.Point(448, 371);
-            this.labelX15.Name = "labelX15";
-            this.labelX15.Size = new System.Drawing.Size(117, 23);
-            this.labelX15.TabIndex = 13;
-            this.labelX15.Text = "政府投资：";
+            // lbYearRoad
             // 
-            // labelX14
+            this.lbYearRoad.AutoSize = true;
+            this.lbYearRoad.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbYearRoad.Location = new System.Drawing.Point(660, 12);
+            this.lbYearRoad.Name = "lbYearRoad";
+            this.lbYearRoad.Size = new System.Drawing.Size(49, 19);
+            this.lbYearRoad.TabIndex = 20;
+            this.lbYearRoad.Text = "2005";
             // 
-            this.labelX14.BackColor = System.Drawing.Color.Transparent;
+            // label15
             // 
-            // 
-            // 
-            this.labelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX14.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX14.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX14.Location = new System.Drawing.Point(142, 3);
-            this.labelX14.Name = "labelX14";
-            this.labelX14.Size = new System.Drawing.Size(108, 23);
-            this.labelX14.TabIndex = 12;
-            this.labelX14.Text = "劳动力数量";
-            // 
-            // labelX13
-            // 
-            this.labelX13.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX13.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX13.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX13.Location = new System.Drawing.Point(166, 254);
-            this.labelX13.Name = "labelX13";
-            this.labelX13.Size = new System.Drawing.Size(48, 23);
-            this.labelX13.TabIndex = 10;
-            this.labelX13.Text = "贸易";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label15.Location = new System.Drawing.Point(710, 12);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 19);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "年";
             // 
             // zedGraphControl12
             // 
@@ -1718,21 +1605,6 @@
             this.zedGraphControl8.Size = new System.Drawing.Size(343, 256);
             this.zedGraphControl8.TabIndex = 0;
             // 
-            // labelX12
-            // 
-            this.labelX12.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX12.Font = new System.Drawing.Font("方正姚体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelX12.ForeColor = System.Drawing.Color.Crimson;
-            this.labelX12.Location = new System.Drawing.Point(535, 48);
-            this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(93, 23);
-            this.labelX12.TabIndex = 9;
-            this.labelX12.Text = "政府投资";
-            // 
             // zedGraphControl11
             // 
             this.zedGraphControl11.Location = new System.Drawing.Point(14, 275);
@@ -1749,7 +1621,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 10;
+            this.timer1.Interval = 120;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
@@ -1759,8 +1631,13 @@
             // 
             // tmYear
             // 
-            this.tmYear.Interval = 79;
+            this.tmYear.Interval = 150;
             this.tmYear.Tick += new System.EventHandler(this.tmYear_Tick);
+            // 
+            // allTimer
+            // 
+            this.allTimer.Interval = 150;
+            this.allTimer.Tick += new System.EventHandler(this.allTimer_Tick);
             // 
             // frmWaterScenario
             // 
@@ -1815,6 +1692,7 @@
             this.tabPage4.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
+            this.splitContainer3.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             this.splitContainer7.Panel1.ResumeLayout(false);
@@ -1826,6 +1704,7 @@
             this.tabPage5.ResumeLayout(false);
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
+            this.splitContainer4.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
             this.splitContainer8.Panel1.ResumeLayout(false);
@@ -1837,6 +1716,7 @@
             this.tabPage6.ResumeLayout(false);
             this.splitContainer5.Panel1.ResumeLayout(false);
             this.splitContainer5.Panel2.ResumeLayout(false);
+            this.splitContainer5.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
             this.splitContainer5.ResumeLayout(false);
             this.splitContainer9.Panel1.ResumeLayout(false);
@@ -1903,7 +1783,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private ZedGraph.ZedGraphControl zedGraphControl3;
         private ZedGraph.ZedGraphControl zedGraphControl2;
-        private DevComponents.DotNetBar.LabelX labelX1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private ZedGraph.ZedGraphControl zedGraphControl1;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -1925,49 +1804,51 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer2;
-        private DevComponents.DotNetBar.LabelX lbRain;
-        private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.LabelX lbTemperature;
-        private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.LabelX lbYearClimate;
         private System.Windows.Forms.Timer tmYear;
         private ZedGraph.ZedGraphControl zedGraphControl4;
-        private DevComponents.DotNetBar.LabelX labelX4;
         private ZedGraph.ZedGraphControl zedGraphControl5;
-        private DevComponents.DotNetBar.LabelX labelX6;
         private System.Windows.Forms.Label label10;
         private ZedGraph.ZedGraphControl zedGraphControl6;
-        private DevComponents.DotNetBar.LabelX lbUsingWater;
-        private DevComponents.DotNetBar.LabelX labelX7;
         private ZedGraph.ZedGraphControl zedGraphControl7;
-        private DevComponents.DotNetBar.LabelX labelX8;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private ZedGraph.ZedGraphControl zedGraphControl10;
         private ZedGraph.ZedGraphControl zedGraphControl9;
-        private DevComponents.DotNetBar.LabelX labelX9;
-        private DevComponents.DotNetBar.LabelX labelX10;
-        private DevComponents.DotNetBar.LabelX labelX11;
         private ZedGraph.ZedGraphControl zedGraphControl11;
         private ZedGraph.ZedGraphControl zedGraphControl8;
-        private DevComponents.DotNetBar.LabelX labelX12;
-        private DevComponents.DotNetBar.LabelX labelX13;
-        private DevComponents.DotNetBar.LabelX labelX2;
         private ZedGraph.ZedGraphControl zedGraphControl12;
-        private DevComponents.DotNetBar.LabelX labelX14;
-        private DevComponents.DotNetBar.LabelX lbLabour;
-        private DevComponents.DotNetBar.LabelX lbGovernment;
-        private DevComponents.DotNetBar.LabelX labelX15;
-        private DevComponents.DotNetBar.LabelX labelX16;
-        private DevComponents.DotNetBar.LabelX lbYearEcology;
-        private DevComponents.DotNetBar.LabelX lbYearCity;
-        private DevComponents.DotNetBar.LabelX lbYearRoad;
-        private DevComponents.DotNetBar.LabelX labelX17;
         private System.Windows.Forms.Label label11;
-        private DevComponents.DotNetBar.LabelX labelX18;
-        private DevComponents.DotNetBar.LabelX labelX19;
-        private DevComponents.DotNetBar.LabelX labelX20;
+        private System.Windows.Forms.Label lbYearClimate;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbYearEcology;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbYearCity;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbYearRoad;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbTemperature;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbRain;
+        private System.Windows.Forms.Label lbUsingWater;
+        private System.Windows.Forms.Label labelX7;
+        private System.Windows.Forms.Label lbGovernment;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbLabour;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Timer allTimer;
     }
 }
 

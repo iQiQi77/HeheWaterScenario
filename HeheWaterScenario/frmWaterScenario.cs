@@ -26,7 +26,7 @@ namespace HeheWaterScenario
         double i = 0;//折线图变量
         int j = 0;//柱状图变量
         int t = 0;//年份变量
-        int[] years = new int[]{2001,2002,2003,2004,2005,2006,2007,2008,2009,2010, 2011,2012,2013,2014,2015,2016,2017,2018,2019, 2020, 2021
+        int[] years = new int[]{2006,2007,2008,2009,2010, 2011,2012,2013,2014,2015,2016,2017,2018,2019, 2020, 2021
             ,2022,2023,2024,2025,2026,2027,2028,2029,2030};
         #endregion
 
@@ -642,11 +642,14 @@ namespace HeheWaterScenario
                     tmYear.Enabled = true;
                     tmYear.Start();
                     t = 0;
+
+                    TemperatureChange();
+                    RainChange();
+
                     //Green
                     if (checkBox6.Checked)
                     {
-                        GreenTemperatureChange();
-                        GreenRainChange();
+                       
                         SupplyGreenChange();
 
                         EnergyGreenChange();
@@ -667,8 +670,6 @@ namespace HeheWaterScenario
                     //NatureWork
                     if (checkBox5.Checked)
                     {
-                        NatureTemperatureChange();
-                        NatureRainChange();
                         SupplyNatureChange();
 
                         EnergyNatureChange();
@@ -689,8 +690,6 @@ namespace HeheWaterScenario
                     //Word
                     if (checkBox4.Checked)
                     {
-                        WordTemperatureChange();
-                        WordRainChange();
                         SupplyWorldChange();
 
                         EnergyWorldChange();
@@ -710,8 +709,6 @@ namespace HeheWaterScenario
                     //National
                     if (checkBox3.Checked)
                     {
-                        NationalTemperatureChange();
-                        NationalRainChange();
                         SupplyNationalChange();
 
                         EnergyNationalChange();
@@ -731,8 +728,6 @@ namespace HeheWaterScenario
                     //Local
                     if (checkBox2.Checked)
                     {
-                        LocalTemperatureChange();
-                        LocalRainChange();
                         SupplyLocalChange();
 
                         EnergyLocalChange();
@@ -752,8 +747,6 @@ namespace HeheWaterScenario
                     //Go
                     if (checkBox1.Checked)
                     {
-                        GoTemperatureChange();
-                        GoRainChange();
                         SupplyGoChange();
 
                         EnergyGoChange();
@@ -787,18 +780,25 @@ namespace HeheWaterScenario
             timer1.Enabled = false;
             timer2.Enabled = false;
             tmYear.Enabled = false;
+            allTimer.Enabled = false;
             CheckBoxAble();
         }
 
-
+        private void allTimer_Tick(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked || checkBox5.Checked || checkBox4.Checked || checkBox3.Checked || checkBox2.Checked || checkBox1.Checked)
+            {
+                TimerTemperatur();
+                TimerRain();
+            }
+        }
         
         private void timer1_Tick(object sender, EventArgs e)
         {
             //temperature--Green
             if (checkBox6.Checked)
             {
-                GreenTimerTemperatur();
-                GreenTimerRain();
+               
 
                 EnergyTimerGreen();
                 UsingWaterTimerGreen();
@@ -813,8 +813,7 @@ namespace HeheWaterScenario
             //temperature--Nature
             if (checkBox5.Checked)
             {
-                NatureTimerTemperatur();
-                NatureTimerRain();
+            
 
                 EnergyTimerNature();
                 UsingWaterTimerNature();
@@ -828,9 +827,6 @@ namespace HeheWaterScenario
             //temperature--Word
             if (checkBox4.Checked)
             {
-                WordTimerTemperatur();
-                WordTimerRain();
-
                 EnergyTimerWorld();
                 UsingWaterTimerWorld();
 
@@ -843,9 +839,6 @@ namespace HeheWaterScenario
             //temperature--National
             if (checkBox3.Checked)
             {
-                NationalTimerTemperatur();
-                NationalTimerRain();
-
                 EnergyTimerNational();
                 UsingWaterTimerNational();
 
@@ -858,8 +851,7 @@ namespace HeheWaterScenario
             //temperature--Local
             if (checkBox2.Checked)
             {
-                LocalTimerTemperatur();
-                LocalTimerRain();
+              
 
                 EnergyTimerLocal();
                 UsingWaterTimerLocal();
@@ -873,8 +865,7 @@ namespace HeheWaterScenario
             //temperature--Go
             if (checkBox1.Checked)
             {
-                GoTimerTemperatur();
-                GoTimerRain();
+                
 
                 EnergyTimerGo();
                 UsingWaterTimerGo();
@@ -929,7 +920,7 @@ namespace HeheWaterScenario
 
         private void tmYear_Tick(object sender, EventArgs e)
         {
-            if (t <= 29)
+            if (t <= 24)
             {
                 int year = years[t];
                 lbYearClimate.Text = year.ToString();
@@ -1021,16 +1012,13 @@ namespace HeheWaterScenario
 
 
 
-
+        int itemreture = 6;
+        
         #region 气候变化模块
 
         #region 气候数据图表
         PointPairList TLa = new PointPairList();
-        PointPairList TLb = new PointPairList();
-        PointPairList TLc = new PointPairList();
-        PointPairList TLd = new PointPairList();
-        PointPairList TLe = new PointPairList();
-        PointPairList TLf = new PointPairList();
+       
 
         private void TemperatureGraph()
         {
@@ -1041,19 +1029,19 @@ namespace HeheWaterScenario
             myPane.YAxis.Title.Text = "温度(℃)";//纵坐标
 
             //X轴
-            myPane.XAxis.Scale.Min = 0;        //X轴最小值0   
-            myPane.XAxis.Scale.Max = 30;    //X轴最大30   
+            myPane.XAxis.Scale.Min = 2005;        //X轴最小值0   
+            myPane.XAxis.Scale.Max = 2030;    //X轴最大100   
 
-            myPane.XAxis.Scale.MinorStep = 5;//X轴小步长1,也就是小间隔   
+            myPane.XAxis.Scale.MinorStep = 1;//X轴小步长1,也就是小间隔   
             myPane.XAxis.Scale.MajorStep = 5;//X轴大步长为5，也就是显示文字的大间隔   
 
 
             //Y轴
-            myPane.YAxis.Scale.Min = 0;     //Y轴最小值0
-            myPane.YAxis.Scale.Max = 3;   //Y轴最大值3
+            myPane.YAxis.Scale.Min = 4.5;     //Y轴最小值0
+            myPane.YAxis.Scale.Max = 7;   //Y轴最大值3
 
             myPane.YAxis.Scale.MinorStep = 0.1;//Y轴小步长0.1,也就是小间隔   
-            myPane.YAxis.Scale.MajorStep = 0.3;//Y轴大步长为0.3，也就是显示文字的大间隔   
+            myPane.YAxis.Scale.MajorStep = 0.5;//Y轴大步长为0.3，也就是显示文字的大间隔   
 
             //改变标题字体两种方法
             //myPane.Title.FontSpec = new FontSpec("Arial", 20, Color.Red,false,false,false);//第一种
@@ -1086,12 +1074,8 @@ namespace HeheWaterScenario
             //myPane.Chart.Fill.Type = FillType.None;  //如果设置为FillType.None,则图表内部颜色和背景色相同
             zedGraphControl1.GraphPane.Chart.Fill = new Fill(Color.White);  //设置图表内部颜色
 
-            LineItem ta = myPane.AddCurve("", TLa, Color.Green);
-            LineItem tb = myPane.AddCurve("", TLb, Color.Yellow);
-            LineItem tc = myPane.AddCurve("", TLc, Color.SkyBlue);
-            LineItem td = myPane.AddCurve("", TLd, Color.PaleGoldenrod);
-            LineItem te = myPane.AddCurve("", TLe, Color.Orange);
-            LineItem tf = myPane.AddCurve("", TLf, Color.Purple);
+            LineItem curve = myPane.AddCurve("", TLa, Color.Green, SymbolType.Circle); 
+           
             //显示网格线
             zedGraphControl1.GraphPane.YAxis.MajorGrid.IsVisible = true;
             zedGraphControl1.GraphPane.XAxis.MajorGrid.IsVisible = true;
@@ -1106,219 +1090,52 @@ namespace HeheWaterScenario
 
 
         }    //气温图表
-
-        private void GreenTemperatureChange()
+        
+       
+        double temperatureValue = 0;
+        private void TemperatureChange()
         {
             TLa.Clear();
-            TLb.Clear();
-            TLc.Clear();
-            TLd.Clear();
-            TLe.Clear();
-            TLf.Clear();
+            
             lbTemperature.Text = "" + "℃";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
+            allTimer.Enabled = true;
+            allTimer.Start();
+            itemreture = 0;
 
-        }  //气温变化---Green，Click事件触发
-        private void GreenTimerTemperatur()
+        }
+
+        double[] temperature = new double[]{5.27,5.27,5.32,5.29,5.47,5.35,5.51,5.55,5.71,5.78,5.86,5.82
+            ,5.89,5.91,5.83, 5.85, 5.83
+            ,5.90,5.97,5.99,6.11,6.17,6.19,6.27,6.50};
+
+
+        private void TimerTemperatur()
         {
-            if (i <= 30)
+            if (itemreture < 25)
             {
-                TLa.Add(i, 0.07 * i + 0.3);
-            }
+                //DataTable dt = ReadExcel.ExcelToDataTable(System.IO.Directory.GetCurrentDirectory().ToString()
+                // + "\\Data\\TempRCP_regionamean.xlsx", 0);
 
-            i = i + 0.08;
+                //temperatureValue = Convert.ToDouble(dt.Rows[itemreture][1].ToString());
+
+                TLa.Add(itemreture + 2006, temperature[itemreture]);
+            }
             zedGraphControl1.AxisChange();
             zedGraphControl1.Refresh();//立即显示
-            if (i <= 30)
+            if (itemreture < 25)
             {
                 //lbYear.Text = "20"+((int)i).ToString();
-                lbTemperature.Text = (0.07 * i + 0.3).ToString(("0.00 ")) + "℃";//保留两位小数
+                lbTemperature.Text = temperature[itemreture].ToString("0.00 ") + "℃";//保留两位小数
             }
-        }  //气温记时间---Green，Timer触发
+            itemreture = itemreture + 1;
+        } 
 
-
-        private void NatureTemperatureChange()
-        {
-            TLa.Clear();
-            TLb.Clear();
-            TLc.Clear();
-            TLd.Clear();
-            TLe.Clear();
-            TLf.Clear();
-            lbTemperature.Text = "" + "℃";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //气温变化---Nature，Click事件触发
-        private void NatureTimerTemperatur()
-        {
-            if (i <= 30)
-            {
-                TLb.Add(i, 0.08 * i);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-
-            i = i + 0.08;
-            zedGraphControl1.AxisChange();
-            zedGraphControl1.Refresh();//立即显示
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbTemperature.Text = (0.08 * i).ToString(("0.00 ")) + "℃";//保留两位小数
-            }
-        }  //气温记时间---Nature，Timer触发
-
-
-        private void WordTemperatureChange()
-        {
-            TLa.Clear();
-            TLb.Clear();
-            TLc.Clear();
-            TLd.Clear();
-            TLe.Clear();
-            TLf.Clear();
-            lbTemperature.Text = "" + "℃";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //气温变化---WordMarket，Click事件触发
-        private void WordTimerTemperatur()
-        {
-            if (i <= 30)
-            {
-                TLc.Add(i, 0.07 * i + 0.3);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-
-            i = i + 0.08;
-            zedGraphControl1.AxisChange();
-            zedGraphControl1.Refresh();//立即显示
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbTemperature.Text = (0.07 * i + 0.3).ToString(("0.00 ")) + "℃";//保留两位小数
-            }
-        }  //气温记时间---WordMarket，Timer触发
-
-
-        private void NationalTemperatureChange()
-        {
-            TLa.Clear();
-            TLb.Clear();
-            TLc.Clear();
-            TLd.Clear();
-            TLe.Clear();
-            TLf.Clear();
-            lbTemperature.Text = "" + "℃";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //气温变化---National，Click事件触发
-        private void NationalTimerTemperatur()
-        {
-            if (i <= 30)
-            {
-                TLd.Add(i, 0.003 * i * i + 0.3);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-
-            i = i + 0.08;
-            zedGraphControl1.AxisChange();
-            zedGraphControl1.Refresh();//立即显示
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbTemperature.Text = (0.003 * i * i + 0.3).ToString(("0.00 ")) + "℃";//保留两位小数
-            }
-        }  //气温记时间---National，Timer触发
-
-        private void LocalTemperatureChange()
-        {
-            TLa.Clear();
-            TLb.Clear();
-            TLc.Clear();
-            TLd.Clear();
-            TLe.Clear();
-            TLf.Clear();
-            lbTemperature.Text = "" + "℃";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //气温变化---Local，Click事件触发
-        private void LocalTimerTemperatur()
-        {
-            if (i <= 30)
-            {
-                TLe.Add(i, 0.07 * i + 0.1);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-
-            i = i + 0.08;
-            zedGraphControl1.AxisChange();
-            zedGraphControl1.Refresh();//立即显示
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbTemperature.Text = (0.07 * i + 0.1).ToString(("0.00 ")) + "℃";//保留两位小数
-            }
-        }  //气温记时间---Local，Timer触发
-
-        private void GoTemperatureChange()
-        {
-            TLa.Clear();
-            TLb.Clear();
-            TLc.Clear();
-            TLd.Clear();
-            TLe.Clear();
-            TLf.Clear();
-            lbTemperature.Text = "" + "℃";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //气温变化---Go，Click事件触发
-        private void GoTimerTemperatur()
-        {
-            if (i <= 30)
-            {
-                TLf.Add(i, 0.03 * i);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-            i = i + 0.08;
-            zedGraphControl1.AxisChange();
-            zedGraphControl1.Refresh();//立即显示
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbTemperature.Text = (0.03 * i).ToString(("0.00 ")) + "℃";//保留两位小数
-            }
-        }  //气温记时间---Go，Timer触发
 
         #endregion
 
         #region 降水数据图表
         PointPairList RLa = new PointPairList();
-        PointPairList RLb = new PointPairList();
-        PointPairList RLc = new PointPairList();
-        PointPairList RLd = new PointPairList();
-        PointPairList RLe = new PointPairList();
-        PointPairList RLf = new PointPairList();
+        
 
         private void RainGraph()
         {
@@ -1360,12 +1177,7 @@ namespace HeheWaterScenario
             //myPane.Chart.Fill.Type = FillType.None;  //如果设置为FillType.None,则图表内部颜色和背景色相同
             zedGraphControl2.GraphPane.Chart.Fill = new Fill(Color.White);  //设置图表内部颜色
 
-            LineItem ra = myPane.AddCurve("", RLa, Color.Brown);
-            LineItem rb = myPane.AddCurve("", RLb, Color.DarkOrchid);
-            LineItem rc = myPane.AddCurve("", RLc, Color.YellowGreen);
-            LineItem rd = myPane.AddCurve("", RLd, Color.Crimson);
-            LineItem re = myPane.AddCurve("", RLe, Color.Plum);
-            LineItem rf = myPane.AddCurve("", RLf, Color.Magenta);
+            LineItem ra = myPane.AddCurve("", RLa, Color.Brown, SymbolType.Circle); 
 
             //显示网格线
             zedGraphControl2.GraphPane.YAxis.MajorGrid.IsVisible = true;
@@ -1373,19 +1185,20 @@ namespace HeheWaterScenario
 
 
             //X轴
-            myPane.XAxis.Scale.Min = 0;        //X轴最小值0   
-            myPane.XAxis.Scale.Max = 30;    //X轴最大30   
+            myPane.XAxis.Scale.Min = 2005;        //X轴最小值0   
+            myPane.XAxis.Scale.Max = 2030;    //X轴最大100   
 
-            myPane.XAxis.Scale.MinorStep = 5;//X轴小步长1,也就是小间隔   
+            myPane.XAxis.Scale.MinorStep = 1;//X轴小步长1,也就是小间隔   
             myPane.XAxis.Scale.MajorStep = 5;//X轴大步长为5，也就是显示文字的大间隔   
 
 
-            //Y轴
-            myPane.YAxis.Scale.Min = 450;     //Y轴最小值0
-            myPane.YAxis.Scale.Max = 600;   //Y轴最大值3
 
-            myPane.YAxis.Scale.MinorStep = 6;//Y轴小步长5,也就是小间隔   
-            myPane.YAxis.Scale.MajorStep = 30;//Y轴大步长为5，也就是显示文字的大间隔   
+            //Y轴
+            myPane.YAxis.Scale.Min = 280;     //Y轴最小值0
+            myPane.YAxis.Scale.Max = 340;   //Y轴最大值3
+
+            myPane.YAxis.Scale.MinorStep = 1;//Y轴小步长5,也就是小间隔   
+            myPane.YAxis.Scale.MajorStep = 10;//Y轴大步长为5，也就是显示文字的大间隔   
 
             zedGraphControl2.AxisChange();
             zedGraphControl2.Refresh();
@@ -1395,207 +1208,40 @@ namespace HeheWaterScenario
 
         }
 
-        private void GreenRainChange()
+
+        double[] rain = new double[]{305.09,316.47,298.74,290.09,294.29,304.27,311.11,316.99,317.56,303.12,313.28,293.60,321.20,321.20,314.84, 320.67, 307.52
+            ,294.62,310.55,317.12,301.09,329.62,317.85,321.42,314.79};
+        int irain = 0;
+        double rainValue = 0;
+        private void RainChange()
         {
             RLa.Clear();
-            RLb.Clear();
-            RLc.Clear();
-            RLd.Clear();
-            RLe.Clear();
-            RLf.Clear();
             lbRain.Text = "" + "mm";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
+            allTimer.Enabled = true;
+            allTimer.Start();
+            irain = 0;
         }  //降水变化---Green，Click事件触发
-        private void GreenTimerRain()
+        private void TimerRain()
         {
-            if (i <= 30)
+            if (irain < 25)
             {
-                RLa.Add(i, 5 * i + 450);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
+                //DataTable dt = ReadExcel.ExcelToDataTable(System.IO.Directory.GetCurrentDirectory().ToString()
+                //+ "\\Data\\TempRCP_regionamean.xlsx", 1);
 
-            i = i + 0.08;
-            zedGraphControl2.AxisChange();
-            zedGraphControl2.Refresh();//立即显示 
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbRain.Text = (5 * i + 450).ToString(("0.0 ")) + "mm";//保留两位小数
+                //rainValue = Convert.ToDouble(dt.Rows[irain][1].ToString());
+                RLa.Add(irain + 2006, rain[irain]);
             }
-
-        }  //降水时间---Green，Timer触发
-
-        private void NatureRainChange()
-        {
-            RLa.Clear();
-            RLb.Clear();
-            RLc.Clear();
-            RLd.Clear();
-            RLe.Clear();
-            RLf.Clear();
-            lbRain.Text = "" + "mm";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-
-        }  //降水变化---Nature，Click事件触发
-        private void NatureTimerRain()
-        {
-            if (i <= 30)
-            {
-                RLb.Add(i, 4 * i + 480);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-            i = i + 0.08;
             zedGraphControl2.AxisChange();
             zedGraphControl2.Refresh();//立即显示
-            if (i <= 30)
+            if (irain < 25)
             {
                 //lbYear.Text = "20"+((int)i).ToString();
-                lbRain.Text = (4 * i + 480).ToString(("0.0 ")) + "mm";//保留两位小数
+                lbRain.Text = rain[irain].ToString("0.00 ") + "mm";//保留两位小数
             }
+            irain = irain + 1;
 
-        }  //降水时间---Nature，Timer触发
-
-        private void WordRainChange()
-        {
-            RLa.Clear();
-            RLb.Clear();
-            RLc.Clear();
-            RLd.Clear();
-            RLe.Clear();
-            RLf.Clear();
-            lbRain.Text = "" + "mm";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //降水变化---WordMarket，Click事件触发
-        private void WordTimerRain()
-        {
-            if (i <= 30)
-            {
-                RLc.Add(i, 3 * i + 500);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-            i = i + 0.08;
-            zedGraphControl2.AxisChange();
-            zedGraphControl2.Refresh();//立即显示 
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbRain.Text = (3 * i + 500).ToString(("0.0 ")) + "mm";//保留两位小数
-            }
-        }  //降水时间---WordMarket，Timer触发
-
-        private void NationalRainChange()
-        {
-            RLa.Clear();
-            RLb.Clear();
-            RLc.Clear();
-            RLd.Clear();
-            RLe.Clear();
-            RLf.Clear();
-            lbRain.Text = "" + "mm";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //降水变化---National，Click事件触发
-        private void NationalTimerRain()
-        {
-            if (i <= 30)
-            {
-                RLd.Add(i, i * i / 10 + 500);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-            i = i + 0.08;
-            zedGraphControl2.AxisChange();
-            zedGraphControl2.Refresh();//立即显示 
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbRain.Text = (i * i / 10 + 500).ToString(("0.0 ")) + "mm";//保留两位小数
-            }
-        }  //降水时间---National，Timer触发
-
-        private void LocalRainChange()
-        {
-            RLa.Clear();
-            RLb.Clear();
-            RLc.Clear();
-            RLd.Clear();
-            RLe.Clear();
-            RLf.Clear();
-            lbRain.Text = "" + "mm";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //降水变化---Local，Click事件触发
-        private void LocalTimerRain()
-        {
-            if (i <= 30)
-            {
-                RLe.Add(i, i * i / 15 + 500);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-            i = i + 0.08;
-            zedGraphControl2.AxisChange();
-            zedGraphControl2.Refresh();//立即显示 
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbRain.Text = (i * i / 15 + 500).ToString(("0.0 ")) + "mm";//保留两位小数
-            }
-        }  //降水时间---Local，Timer触发
-
-        private void GoRainChange()
-        {
-            RLa.Clear();
-            RLb.Clear();
-            RLc.Clear();
-            RLd.Clear();
-            RLe.Clear();
-            RLf.Clear();
-            lbRain.Text = "" + "mm";
-            timer1.Enabled = true;
-            timer1.Start();
-            i = 0;
-        }  //降水变化---Go，Click事件触发
-        private void GoTimerRain()
-        {
-            if (i <= 30)
-            {
-                RLf.Add(i, 10 * Math.Sqrt(i) + 500);
-            }
-            else
-            {
-                CheckBoxAble();
-            }
-            i = i + 0.08;
-            zedGraphControl2.AxisChange();
-            zedGraphControl2.Refresh();//立即显示 
-            if (i <= 30)
-            {
-                //lbYear.Text = "20"+((int)i).ToString();
-                lbRain.Text = (10 * Math.Sqrt(i) + 500).ToString(("0.0 ")) + "mm";//保留两位小数
-            }
-        }  //降水时间---Go，Timer触发
+        }  
+        
 
         #endregion
 
@@ -1946,7 +1592,7 @@ namespace HeheWaterScenario
                 CheckBoxAble();
             }
 
-            i = i + 0.00001;
+            i = i + 1;
             zedGraphControl4.AxisChange();
             zedGraphControl4.Refresh();//立即显示 
 
@@ -1975,7 +1621,7 @@ namespace HeheWaterScenario
                 CheckBoxAble();
             }
 
-            i = i + 0.00001;
+            i = i + 1;
             zedGraphControl4.AxisChange();
             zedGraphControl4.Refresh();//立即显示 
 
@@ -4131,14 +3777,20 @@ namespace HeheWaterScenario
         }
         #endregion
 
+       
 
 
-
-
-
+       
 
 
         #endregion
+
+       
+
+          
+           
+           
+       
 
 
 
